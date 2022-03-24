@@ -27,8 +27,18 @@ using namespace std;
    	case 3:
 		 if(total>45000){
       			diskon=total*0.1;
-      			total-=diskon; 
+      			total-=diskon;
+			garis(30);
+			cout<<"    PEMBAYARAN    "<<endl;
+			garis(30);
+			cout<<"TOTAL : "<<total<<endl;
     		}
+		else {
+			garis(30);
+			cout<<"    PEMBAYARAN    "<<endl;
+			garis(30);
+			cout<<"TOTAL : "<<total<<endl;
+		}
     		break;
     
    	default:
