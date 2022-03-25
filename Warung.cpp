@@ -9,8 +9,8 @@ void garis(int a){
 }
 
 int main(){
-int ayambakar = 21000, ayamgoreng = 17000, pilih, pcs, harga, total=0, diskon;
-int pcsag=0, pcsab=0;
+int ayambakar = 21000, ayamgoreng = 17000, pilih, pcs, diskon;
+int pcsag=0, pcsab=0, hargaag=0, hargaab=0, total=0,;
 menu: 
 system("cls");
 cout<<"Daftar menu : "<<endl;
@@ -24,30 +24,33 @@ switch(pilih){
 		cout<<"Pcs : ";
 		cin>>pcs;
 		pcsag+=pcs;
-		harga=pcs*ayamgoreng;
-		total+=harga;
+		hargaag=pcs*ayamgoreng;
+		total+=hargaag;
 		goto menu;
 		break;
   	case 2:
 		cout<<"Pcs : ";
 		cin>>pcs;
 		pcsab+=pcs;
-		harga=pcs*ayambakar;
-		total+=harga;
+		hargaab=pcs*ayambakar;
+		total+=hargaab;
 		goto menu;
 		break;
   	case 3:	
 		garis(30);
-		cout<<"\t\tPembayaran"<<endl;
+		cout<<"\t\tPEMBAYARAN"<<endl;
 		garis(30);
-		cout<<"Ayam Goreng x"<<pcsag<<endl;
-		cout<<"Ayam Bakar  x"<<pcsab<<endl;
+		cout<<"Ayam Goreng\t\tx"<<"\tRp. "<<pcsag<<endl;
+		cout<<"Ayam Bakar \t\tx"<<"\tRp. "<<pcsab<<endl;
 		if(total>45000){
+			garis(30);
+			cout<<"Total Harga\t\t\tRp. "<<total<<endl;
 			diskon=total*0.1;
 			total-=diskon;
-			cout<<"TOTAL : "<<total<<endl;
+			cout<<"Total Setelah Diskon \t\tRp. "<<total<<endl;
+			garis(30);
 		}else{
-			cout<<"TOTAL : "<<total<<endl;
+			cout<<"Total Harga \t\tRp. "<<total<<endl;
 		}
 		break;
 		default:
