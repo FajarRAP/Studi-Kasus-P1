@@ -9,7 +9,7 @@ void garis(int a){
 }
 
 int main(){
-int ayambakar = 21000, ayamgoreng = 17000, pilih, pcs, harga, total, diskon;
+int ayambakar = 21000, ayamgoreng = 17000, pilih, pcs, harga, total=0, diskon;
 int pcsag=0, pcsab=0;
 menu: 
 system("cls");
