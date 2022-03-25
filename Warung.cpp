@@ -10,7 +10,7 @@ void garis(int a){
 
 int main(){
 int ayambakar = 21000, ayamgoreng = 17000, pilih, pcs, diskon;
-int pcsag=0, pcsab=0, hargaag=0, hargaab=0, total=0,;
+int pcsag=0, pcsab=0, hargaag=0, hargaab=0, total=0;
 menu: 
 system("cls");
 cout<<"Daftar menu : "<<endl;
